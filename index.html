@@ -459,7 +459,7 @@
       .stats { flex-wrap: wrap; }
       .stat { border-right: none; border-bottom: 1px solid #e8ecf0; width: 50%; }
       nav ul { display: none; }
-      .btn-outline { display: none; }
+      .btn-outline { display: inline-block; margin-left: 0; margin-top: 12px; }
 
       .hamburger {
         display: flex;
@@ -721,7 +721,11 @@
 <footer>
   <div class="footer-logo">Prime <span>Time</span> Enterprise Ltd</div>
   <p>© 2026 Prime Time Enterprise Ltd. Registered in England & Wales. Company No. 08686705.</p>
-  <p><a href="mailto:office@primetimeenterprise.ltd">office@primetimeenterprise.ltd</a></p>
+  <div style="display:flex;gap:20px;flex-wrap:wrap;">
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms &amp; Conditions</a>
+    <a href="mailto:office@primetimeenterprise.ltd">office@primetimeenterprise.ltd</a>
+  </div>
 </footer>
 
 <!-- COOKIE CONSENT BANNER -->
