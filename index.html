@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prime Time Enterprise Ltd – TV Content Rights & Licensing</title>
+  <meta name="description" content="Prime Time Enterprise Ltd manages and licenses television content rights across Europe. We protect original productions and facilitate legitimate broadcast agreements."/>
+  <meta name="keywords" content="TV rights, broadcast licensing, content protection, chain of title, television licensing, rights enforcement, UK rights management"/>
+  <meta name="author" content="Prime Time Enterprise Ltd"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://primetimeenterprise.ltd"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png"/>
+
+  <!-- Open Graph (Facebook, WhatsApp, Viber, LinkedIn) -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://primetimeenterprise.ltd"/>
+  <meta property="og:title" content="Prime Time Enterprise Ltd – TV Content Rights & Licensing"/>
+  <meta property="og:description" content="UK-based TV content rights management. We protect, license and enforce television content rights across Europe."/>
+  <meta property="og:image" content="https://primetimeenterprise.ltd/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta property="og:site_name" content="Prime Time Enterprise Ltd"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Prime Time Enterprise Ltd – TV Content Rights & Licensing"/>
+  <meta name="twitter:description" content="UK-based TV content rights management. We protect, license and enforce television content rights across Europe."/>
+  <meta name="twitter:image" content="https://primetimeenterprise.ltd/og-image.png"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --blue:   #1F3864;
+      --gold:   #C9A84C;
+      --light:  #f5f7fa;
+      --gray:   #555;
+      --white:  #fff;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #333;
+      background: var(--white);
+    }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--blue);
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+    }
+    .logo {
+      color: var(--white);
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
+    .logo span { color: var(--gold); }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav ul a {
+      color: rgba(255,255,255,.85);
+      text-decoration: none;
+      font-size: .9rem;
+      letter-spacing: .3px;
+      transition: color .2s;
+    }
+    nav ul a:hover { color: var(--gold); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #1F3864 0%, #2c5282 60%, #1a2f5a 100%);
+      color: var(--white);
+      padding: 110px 5% 90px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(201,168,76,.2);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.8);
+      max-width: 580px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--blue);
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 14px 36px;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: .3px;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: #d4b05a; transform: translateY(-1px); }
+    .btn-outline {
+      display: inline-block;
+      border: 2px solid rgba(255,255,255,.5);
+      color: var(--white);
+      font-weight: 600;
+      font-size: .95rem;
+      padding: 12px 32px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-left: 14px;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-outline:hover { border-color: var(--white); color: var(--white); }
+
+    /* ── STATS BAR ── */
+    .stats {
+      background: var(--white);
+      border-bottom: 1px solid #e8ecf0;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+    .stat {
+      padding: 28px 50px;
+      text-align: center;
+      border-right: 1px solid #e8ecf0;
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--blue);
+    }
+    .stat-num span { color: var(--gold); }
+    .stat-label {
+      font-size: .78rem;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      margin-top: 4px;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 80px 5%; }
+    .section-tag {
+      display: inline-block;
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--blue);
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .lead {
+      font-size: 1.05rem;
+      color: var(--gray);
+      line-height: 1.8;
+      max-width: 640px;
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--light); }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 36px 28px;
+      border-top: 4px solid var(--gold);
+      box-shadow: 0 2px 16px rgba(0,0,0,.06);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,.1); }
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 18px;
+      color: var(--blue);
+    }
+    .card-icon svg {
+      width: 44px;
+      height: 44px;
+    }
+    .card h3 {
+      font-size: 1.05rem;
+      color: var(--blue);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: .9rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* ── ABOUT ── */
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-img {
+      background: linear-gradient(135deg, var(--blue), #2c5282);
+      border-radius: 8px;
+      padding: 48px 40px;
+      color: var(--white);
+    }
+    .about-img h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 12px;
+    }
+    .about-img dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0;
+    }
+    .about-img dt {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--gold);
+      padding: 9px 16px 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      white-space: nowrap;
+    }
+    .about-img dd {
+      font-size: .88rem;
+      color: rgba(255,255,255,.9);
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      margin: 0;
+    }
+    .about-img dt:last-of-type,
+    .about-img dd:last-of-type { border-bottom: none; }
+
+    /* ── PROCESS ── */
+    .process { background: var(--light); }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      margin-top: 48px;
+      position: relative;
+    }
+    .step {
+      text-align: center;
+      padding: 32px 20px;
+      position: relative;
+    }
+    .step-num {
+      width: 52px;
+      height: 52px;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      border: 3px solid var(--gold);
+    }
+    .step h4 {
+      font-size: .95rem;
+      color: var(--blue);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .step p {
+      font-size: .85rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* ── CONTACT ── */
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .contact-info h3 {
+      color: var(--blue);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .contact-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+    .contact-item-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--blue);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .contact-item-text strong {
+      display: block;
+      font-size: .8rem;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: 3px;
+    }
+    .contact-item-text a, .contact-item-text span {
+      color: var(--blue);
+      font-weight: 600;
+      font-size: .95rem;
+      text-decoration: none;
+    }
+    .contact-item-text a:hover { color: var(--gold); }
+
+    .contact-form {
+      background: var(--light);
+      border-radius: 8px;
+      padding: 36px;
+      border-top: 4px solid var(--gold);
+    }
+    .contact-form h3 {
+      color: var(--blue);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-bottom: 6px;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%;
+      border: 1.5px solid #dde2ea;
+      border-radius: 4px;
+      padding: 10px 14px;
+      font-size: .92rem;
+      font-family: inherit;
+      color: #333;
+      background: var(--white);
+      transition: border-color .2s;
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+    .form-group textarea { height: 100px; resize: vertical; }
+    .btn-submit {
+      background: var(--blue);
+      color: var(--white);
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      transition: background .2s;
+    }
+    .btn-submit:hover { background: #2c5282; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0f1e35;
+      color: rgba(255,255,255,.6);
+      padding: 40px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    footer .footer-logo {
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    footer .footer-logo span { color: var(--gold); }
+    footer p { font-size: .82rem; }
+    footer a { color: rgba(255,255,255,.5); text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+
+    @media (max-width: 768px) {
+      .about-inner, .contact-inner { grid-template-columns: 1fr; }
+      .stats { flex-wrap: wrap; }
+      .stat { border-right: none; border-bottom: 1px solid #e8ecf0; width: 50%; }
+      nav ul { display: none; }
+      .btn-outline { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Prime <span>Time</span> Enterprise</div>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">How We Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">TV Content Rights Management</div>
+  <h1>Protecting & Licensing<br><span>Original Television Content</span><br>Across Europe</h1>
+  <p>Prime Time Enterprise Ltd is a UK-based rights management company specialising in the protection, licensing and enforcement of television content rights for independent producers and content owners.</p>
+  <a href="#contact" class="btn-primary">Get in Touch</a>
+  <a href="#services" class="btn-outline">Our Services</a>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">10<span>+</span></div>
+    <div class="stat-label">Years in Business</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num"><span>EU</span></div>
+    <div class="stat-label">Market Coverage</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">100<span>%</span></div>
+    <div class="stat-label">Independent</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">UK<span> Ltd</span></div>
+    <div class="stat-label">Registered Since 2013</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-tag">What We Do</div>
+  <h2>Content Rights & Licensing Services</h2>
+  <p class="lead">We work on behalf of independent television producers and content owners to manage their intellectual property, negotiate licensing agreements and pursue enforcement where rights are infringed.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg></div>
+      <h3>Broadcast Licensing</h3>
+      <p>We negotiate and structure licensing agreements with television broadcasters, cable operators and streaming platforms across European markets.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+      <h3>Rights Enforcement</h3>
+      <p>Where content is broadcast without authorisation, we take firm and decisive action — from formal notices to legal proceedings — to protect our clients' rights.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+      <h3>Chain of Title</h3>
+      <p>We establish, document and maintain complete ownership records for television programmes, ensuring clean title for licensing and co-production purposes.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <h3>Licensing Negotiations</h3>
+      <p>Our team handles all aspects of broadcast licence negotiations — from initial term sheets to executed agreements — on behalf of rights holders.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+      <h3>Territory Management</h3>
+      <p>We manage territorial rights across multiple jurisdictions, including the UK, Germany, Austria, Switzerland and Southeast Europe.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      <h3>Rights Audits</h3>
+      <p>We conduct thorough audits of broadcast histories to identify unauthorised use and quantify the scope of any infringement for enforcement purposes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div>
+      <div class="section-tag">About Us</div>
+      <h2>Independent Rights Management, Based in London</h2>
+      <p class="lead" style="margin-bottom:20px">Prime Time Enterprise Ltd was incorporated in the United Kingdom in 2013. We specialise in managing television content rights for independent producers, with a particular focus on Central and Southeast European markets.</p>
+      <p class="lead" style="margin-bottom:20px">Our work covers the full lifecycle of a programme's commercial life — from initial production rights documentation through to licensing, distribution and, where necessary, enforcement against unauthorised broadcasters.</p>
+      <p class="lead">We represent content owners directly, ensuring they receive fair value for their creative work and that their programmes are broadcast only by authorised parties under properly negotiated agreements.</p>
+    </div>
+    <div class="about-img">
+      <h3>Company Details</h3>
+      <dl>
+        <dt>Name</dt><dd>Prime Time Enterprise Ltd</dd>
+        <dt>Registered</dt><dd>England &amp; Wales</dd>
+        <dt>Co. No.</dt><dd>08686705</dd>
+        <dt>Incorporated</dt><dd>11 September 2013</dd>
+        <dt>Address</dt><dd>Dept 2654, 196 High Road,<br>Wood Green, London N22 8HH</dd>
+        <dt>Email</dt><dd>office@primetimeenterprise.ltd</dd>
+        <dt>Phone</dt><dd>+44 20 4587 8724</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="section-tag">How We Work</div>
+  <h2>Our Enforcement Process</h2>
+  <p class="lead">When we identify unauthorised use of content we represent, we follow a clear and professional process to achieve resolution.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Rights Verification</h4>
+      <p>We establish and document full chain of title ownership before taking any action.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Infringement Identification</h4>
+      <p>We identify unauthorised broadcasts, quantify the scope and gather evidence.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Formal Notice</h4>
+      <p>A formal cease and desist notice is issued to the infringing party with clear demands and deadlines.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h4>Negotiated Resolution</h4>
+      <p>Where possible, we seek a negotiated settlement including retroactive licensing fees.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <h4>Legal Action</h4>
+      <p>If resolution is not reached, we proceed with civil litigation and refer matters to relevant regulatory authorities.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <div class="section-tag">Contact</div>
+      <h2>Get in Touch</h2>
+      <p class="lead" style="margin-bottom:32px">For licensing enquiries, rights matters or enforcement notifications, please contact us by email. We aim to respond to all enquiries within one business day.</p>
+      <h3>Contact Details</h3>
+      <div class="contact-item">
+        <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div class="contact-item-text">
+          <strong>Email (preferred)</strong>
+          <a href="mailto:office@primetimeenterprise.ltd">office@primetimeenterprise.ltd</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/></svg></div>
+        <div class="contact-item-text">
+          <strong>Telephone</strong>
+          <a href="tel:+442045878724">+44 20 4587 8724</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="contact-item-text">
+          <strong>Registered Address</strong>
+          <span>Dept 2654, 196 High Road<br>Wood Green, London N22 8HH<br>United Kingdom</span>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--gray);margin-top:16px;line-height:1.6">
+        ⚠ Please note: all formal correspondence must be sent by email. Postal correspondence may cause significant delays in response times.
+      </p>
+    </div>
+    <div class="contact-form">
+      <h3>Send an Enquiry</h3>
+      <form onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input id="f-name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input id="f-email" type="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Company / Organisation</label>
+          <input id="f-company" type="text" placeholder="Company name" />
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select id="f-subject">
+            <option>Licensing Enquiry</option>
+            <option>Rights Verification</option>
+            <option>Enforcement Matter</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="f-message" placeholder="Describe your enquiry..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Enquiry →</button>
+        <p id="form-error" style="display:none;color:#e53e3e;margin-top:10px;font-size:.85rem">Something went wrong. Please email us directly at <a href="mailto:office@primetimeenterprise.ltd">office@primetimeenterprise.ltd</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Prime <span>Time</span> Enterprise Ltd</div>
+  <p>© 2026 Prime Time Enterprise Ltd. Registered in England & Wales. Company No. 08686705.</p>
+  <p><a href="mailto:office@primetimeenterprise.ltd">office@primetimeenterprise.ltd</a></p>
+</footer>
+
+<!-- COOKIE CONSENT BANNER -->
+<style>
+  #cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #0d1b2e;
+    border-top: 2px solid #c9a84c;
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    z-index: 9999;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: .88rem;
+    color: rgba(255,255,255,.85);
+    flex-wrap: wrap;
+    box-shadow: 0 -4px 24px rgba(0,0,0,.4);
+    transform: translateY(100%);
+    transition: transform .4s ease;
+  }
+  #cookie-banner.visible { transform: translateY(0); }
+  #cookie-banner p { margin: 0; flex: 1; min-width: 200px; line-height: 1.5; }
+  #cookie-banner a { color: #c9a84c; text-decoration: underline; }
+  .cookie-btns { display: flex; gap: 10px; flex-shrink: 0; }
+  .cookie-accept {
+    background: #c9a84c; color: #0d1b2e;
+    border: none; border-radius: 4px;
+    padding: 9px 22px; font-weight: 700;
+    font-size: .85rem; cursor: pointer;
+    white-space: nowrap;
+  }
+  .cookie-accept:hover { background: #e0be6a; }
+  .cookie-decline {
+    background: transparent; color: rgba(255,255,255,.6);
+    border: 1px solid rgba(255,255,255,.25); border-radius: 4px;
+    padding: 9px 18px; font-size: .85rem; cursor: pointer;
+    white-space: nowrap;
+  }
+  .cookie-decline:hover { border-color: rgba(255,255,255,.5); color: #fff; }
+</style>
+
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p>
+    We use essential cookies to ensure this website functions correctly. We do not use tracking or advertising cookies.
+    By clicking <strong>Accept</strong> you consent to our use of cookies.
+    <a href="#about" onclick="document.getElementById('cookie-banner').style.display='none'">Learn more</a>
+  </p>
+  <div class="cookie-btns">
+    <button class="cookie-decline" onclick="cookieDecline()">Decline</button>
+    <button class="cookie-accept" onclick="cookieAccept()">Accept</button>
+  </div>
+</div>
+
+<script>
+  // Cookie consent logic
+  function cookieAccept() {
+    localStorage.setItem('cookie_consent', 'accepted');
+    hideBanner();
+  }
+  function cookieDecline() {
+    localStorage.setItem('cookie_consent', 'declined');
+    hideBanner();
+  }
+  function hideBanner() {
+    const b = document.getElementById('cookie-banner');
+    b.style.transform = 'translateY(100%)';
+    setTimeout(() => b.style.display = 'none', 400);
+  }
+  // Show banner only if no choice has been made yet
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.getItem('cookie_consent')) {
+      setTimeout(() => {
+        document.getElementById('cookie-banner').classList.add('visible');
+      }, 800);
+    }
+  });
+</script>
+
+<script>
+  const WEBHOOK = 'https://hook.eu2.make.com/qa3gyzu5amyrhxtulyejc8f7f91c5e51';
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.btn-submit');
+    const errEl = document.getElementById('form-error');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    errEl.style.display = 'none';
+    try {
+      await fetch(WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name:    document.getElementById('f-name').value,
+          email:   document.getElementById('f-email').value,
+          company: document.getElementById('f-company').value,
+          subject: document.getElementById('f-subject').value,
+          message: document.getElementById('f-message').value
+        })
+      });
+      btn.textContent = '✓ Sent – we will be in touch shortly';
+      btn.style.background = '#2d7a3a';
+    } catch (err) {
+      btn.textContent = 'Send Enquiry →';
+      btn.disabled = false;
+      errEl.style.display = 'block';
+    }
+  }
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
