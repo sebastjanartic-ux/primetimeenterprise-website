@@ -458,20 +458,67 @@
       .stat { border-right: none; border-bottom: 1px solid #e8ecf0; width: 50%; }
       nav ul { display: none; }
       .btn-outline { display: none; }
+
+      .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28px;
+        height: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 200;
+      }
+      .hamburger span {
+        display: block;
+        height: 2px;
+        background: var(--white);
+        border-radius: 2px;
+        transition: transform .3s, opacity .3s;
+      }
+      .hamburger.open span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+      .hamburger.open span:nth-child(2) { opacity: 0; }
+      .hamburger.open span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+      nav.nav-open ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0; right: 0;
+        background: var(--blue);
+        padding: 16px 0 24px;
+        gap: 0;
+        box-shadow: 0 8px 24px rgba(0,0,0,.3);
+      }
+      nav.nav-open ul li a {
+        display: block;
+        padding: 14px 5%;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+      }
     }
+    .hamburger { display: none; }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
+<nav id="main-nav">
   <div class="logo">Prime <span>Time</span> Enterprise</div>
-  <ul>
+  <ul id="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#process">How We Work</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -785,6 +832,22 @@
       errEl.style.display = 'block';
     }
   }
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main-nav');
+  hamburger.addEventListener('click', () => {
+    const open = nav.classList.toggle('nav-open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('#nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('nav-open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+    });
+  });
+
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
