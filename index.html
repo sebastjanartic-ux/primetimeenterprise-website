@@ -51,7 +51,7 @@
     /* ── NAV ── */
     nav {
       background: var(--blue);
-      padding: 0 5%;
+      padding: 0 max(5%, calc(50% - 640px));
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -86,7 +86,7 @@
     .hero {
       background: linear-gradient(135deg, #1F3864 0%, #2c5282 60%, #1a2f5a 100%);
       color: var(--white);
-      padding: 110px 5% 90px;
+      padding: 110px max(5%, calc(50% - 640px)) 90px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -184,7 +184,7 @@
     }
 
     /* ── SECTIONS ── */
-    section { padding: 80px 5%; }
+    section { padding: 80px max(5%, calc(50% - 640px)); }
     .section-tag {
       display: inline-block;
       color: var(--gold);
@@ -435,7 +435,7 @@
     footer {
       background: #0f1e35;
       color: rgba(255,255,255,.6);
-      padding: 40px 5%;
+      padding: 40px max(5%, calc(50% - 640px));
       display: flex;
       justify-content: space-between;
       align-items: center;
